@@ -15,6 +15,8 @@
 		9DB8D1B11C1CA7C8000E750A /* p2s_action_bar_logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8D1AE1C1CA7C8000E750A /* p2s_action_bar_logo_small.png */; settings = {ASSET_TAGS = (); }; };
 		9DB8D1B21C1CA7C8000E750A /* p2s_action_bar_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8D1AF1C1CA7C8000E750A /* p2s_action_bar_logo.png */; settings = {ASSET_TAGS = (); }; };
 		9DB8D1B31C1CA7C8000E750A /* p2s_login_page_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8D1B01C1CA7C8000E750A /* p2s_login_page_logo.png */; settings = {ASSET_TAGS = (); }; };
+		9DEF10C91C2A48A200A37A84 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEF10C81C2A48A200A37A84 /* DataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		9DEF10CB1C2A4E8400A37A84 /* NameCodePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEF10CA1C2A4E8400A37A84 /* NameCodePair.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		9DB8D1AE1C1CA7C8000E750A /* p2s_action_bar_logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2s_action_bar_logo_small.png; sourceTree = "<group>"; };
 		9DB8D1AF1C1CA7C8000E750A /* p2s_action_bar_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2s_action_bar_logo.png; sourceTree = "<group>"; };
 		9DB8D1B01C1CA7C8000E750A /* p2s_login_page_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2s_login_page_logo.png; sourceTree = "<group>"; };
+		9DEF10C81C2A48A200A37A84 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		9DEF10CA1C2A4E8400A37A84 /* NameCodePair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameCodePair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				9DB8D19A1C1C99AF000E750A /* AppDelegate.swift */,
 				9DB8D19C1C1C99AF000E750A /* ViewController.swift */,
 				9DB8D1AC1C1C9A2E000E750A /* UI */,
+				9DEF10C71C2A488000A37A84 /* Data */,
 				9DB8D1AD1C1CA7B5000E750A /* Images */,
 				9DB8D1A11C1C99AF000E750A /* Assets.xcassets */,
 				9DB8D1A31C1C99AF000E750A /* LaunchScreen.storyboard */,
@@ -87,6 +92,15 @@
 				9DB8D1B01C1CA7C8000E750A /* p2s_login_page_logo.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		9DEF10C71C2A488000A37A84 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9DEF10C81C2A48A200A37A84 /* DataSource.swift */,
+				9DEF10CA1C2A4E8400A37A84 /* NameCodePair.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DEF10C91C2A48A200A37A84 /* DataSource.swift in Sources */,
+				9DEF10CB1C2A4E8400A37A84 /* NameCodePair.swift in Sources */,
 				9DB8D19D1C1C99AF000E750A /* ViewController.swift in Sources */,
 				9DB8D19B1C1C99AF000E750A /* AppDelegate.swift in Sources */,
 			);
@@ -313,6 +329,7 @@
 				9DB8D1AB1C1C99B0000E750A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
