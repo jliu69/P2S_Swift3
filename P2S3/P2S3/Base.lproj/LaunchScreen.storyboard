@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +17,79 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2yW-Gb-LlQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7f-iq-AhO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hgr-zD-QUN"/>
+                                    <constraint firstAttribute="width" constant="150" id="rvI-3L-iWm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hgr-zD-QUN"/>
+                                        <exclude reference="rvI-3L-iWm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="hgr-zD-QUN"/>
+                                        <include reference="rvI-3L-iWm"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.83644551180403948" green="1" blue="0.74059614075770197" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="T7f-iq-AhO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6FF-1a-c6N"/>
+                            <constraint firstItem="2yW-Gb-LlQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="6wK-YA-KPK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2yW-Gb-LlQ" secondAttribute="trailing" constant="-20" id="88W-r8-8SG"/>
+                            <constraint firstItem="2yW-Gb-LlQ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Mqo-5x-dmH"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="2yW-Gb-LlQ" secondAttribute="bottom" id="PGs-JL-hzX"/>
+                            <constraint firstItem="T7f-iq-AhO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wCy-V3-bqW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2yW-Gb-LlQ"/>
+                                <exclude reference="T7f-iq-AhO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6wK-YA-KPK"/>
+                                <exclude reference="88W-r8-8SG"/>
+                                <exclude reference="Mqo-5x-dmH"/>
+                                <exclude reference="6FF-1a-c6N"/>
+                                <exclude reference="wCy-V3-bqW"/>
+                                <exclude reference="PGs-JL-hzX"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2yW-Gb-LlQ"/>
+                                <include reference="T7f-iq-AhO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6wK-YA-KPK"/>
+                                <include reference="88W-r8-8SG"/>
+                                <include reference="Mqo-5x-dmH"/>
+                                <include reference="6FF-1a-c6N"/>
+                                <include reference="wCy-V3-bqW"/>
+                                <include reference="PGs-JL-hzX"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
 </document>

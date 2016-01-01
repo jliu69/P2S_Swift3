@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     var logoImageView:UIImageView?
     
+    //MARK: - init
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = true
@@ -39,6 +41,22 @@ class ViewController: UIViewController {
         print("... this is to settings page")
     }
     
+    //MARK: - ib action
+    
+    
+    @IBAction func nextPageAction(sender: AnyObject) {
+        self.selectState()
+    }
+    
+    //MARK: - choose a state
+    
+    func selectState() {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "SelectionsViewController", bundle: nil)
+        let selectionsVC = storyboard.instantiateViewControllerWithIdentifier("selectOptions") as! SelectionsViewController
+        selectionsVC.titleText = "States"
+        self.navigationController?.pushViewController(selectionsVC, animated: true)
+    }
     
 }
 
