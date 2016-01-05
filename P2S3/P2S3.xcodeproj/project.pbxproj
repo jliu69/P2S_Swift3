@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D7F1C6E1C3B798E00420D0A /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F1C6D1C3B798E00420D0A /* StaticData.swift */; settings = {ASSET_TAGS = (); }; };
+		9D7F1C751C3B79BC00420D0A /* Login3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7F1C701C3B79BC00420D0A /* Login3ViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
+		9D7F1C761C3B79BC00420D0A /* Login3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F1C711C3B79BC00420D0A /* Login3ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9D7F1C771C3B79BC00420D0A /* RegisterSaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F1C721C3B79BC00420D0A /* RegisterSaveViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9D7F1C781C3B79BC00420D0A /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D7F1C731C3B79BC00420D0A /* RegisterViewController.storyboard */; settings = {ASSET_TAGS = (); }; };
+		9D7F1C791C3B79BC00420D0A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F1C741C3B79BC00420D0A /* RegisterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9D7F1C7B1C3B7A8E00420D0A /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F1C7A1C3B7A8E00420D0A /* UserDefaultKeys.swift */; settings = {ASSET_TAGS = (); }; };
+		9DA85B521C36F72B0063762D /* SiteColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA85B511C36F72B0063762D /* SiteColors.swift */; settings = {ASSET_TAGS = (); }; };
 		9DB8D19B1C1C99AF000E750A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8D19A1C1C99AF000E750A /* AppDelegate.swift */; };
 		9DB8D19D1C1C99AF000E750A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8D19C1C1C99AF000E750A /* ViewController.swift */; };
 		9DB8D1A01C1C99AF000E750A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8D19E1C1C99AF000E750A /* Main.storyboard */; };
@@ -28,6 +36,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D7F1C6D1C3B798E00420D0A /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StaticData.swift; path = Data/StaticData.swift; sourceTree = "<group>"; };
+		9D7F1C701C3B79BC00420D0A /* Login3ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login3ViewController.storyboard; path = Login_Register/Login3ViewController.storyboard; sourceTree = "<group>"; };
+		9D7F1C711C3B79BC00420D0A /* Login3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login3ViewController.swift; path = Login_Register/Login3ViewController.swift; sourceTree = "<group>"; };
+		9D7F1C721C3B79BC00420D0A /* RegisterSaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterSaveViewController.swift; path = Login_Register/RegisterSaveViewController.swift; sourceTree = "<group>"; };
+		9D7F1C731C3B79BC00420D0A /* RegisterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RegisterViewController.storyboard; path = Login_Register/RegisterViewController.storyboard; sourceTree = "<group>"; };
+		9D7F1C741C3B79BC00420D0A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Login_Register/RegisterViewController.swift; sourceTree = "<group>"; };
+		9D7F1C7A1C3B7A8E00420D0A /* UserDefaultKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultKeys.swift; path = Data/UserDefaultKeys.swift; sourceTree = "<group>"; };
+		9DA85B511C36F72B0063762D /* SiteColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SiteColors.swift; path = Data/SiteColors.swift; sourceTree = "<group>"; };
 		9DB8D1971C1C99AF000E750A /* P2S3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2S3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB8D19A1C1C99AF000E750A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB8D19C1C1C99AF000E750A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D7F1C6F1C3B799F00420D0A /* Login_Register */ = {
+			isa = PBXGroup;
+			children = (
+				9D7F1C711C3B79BC00420D0A /* Login3ViewController.swift */,
+				9D7F1C741C3B79BC00420D0A /* RegisterViewController.swift */,
+				9D7F1C721C3B79BC00420D0A /* RegisterSaveViewController.swift */,
+			);
+			name = Login_Register;
+			sourceTree = "<group>";
+		};
 		9DB8D18E1C1C99AF000E750A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +109,7 @@
 				9DB8D19A1C1C99AF000E750A /* AppDelegate.swift */,
 				9DB8D1AC1C1C9A2E000E750A /* UI */,
 				9DEB22C11C35901200AE0257 /* Controllers */,
+				9D7F1C6F1C3B799F00420D0A /* Login_Register */,
 				9DEF10C71C2A488000A37A84 /* Data */,
 				9DEB22B81C358F6100AE0257 /* Models */,
 				9DB8D1AD1C1CA7B5000E750A /* Images */,
@@ -99,6 +126,8 @@
 				9DB8D19E1C1C99AF000E750A /* Main.storyboard */,
 				9DEB22C41C35902A00AE0257 /* SelectionsViewController.storyboard */,
 				9DEB22C31C35902A00AE0257 /* SelectionCell.xib */,
+				9D7F1C701C3B79BC00420D0A /* Login3ViewController.storyboard */,
+				9D7F1C731C3B79BC00420D0A /* RegisterViewController.storyboard */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -137,6 +166,9 @@
 			children = (
 				9DEB22BD1C358FD700AE0257 /* CommonDataObject.swift */,
 				9DEB22BE1C358FD700AE0257 /* JsonLinks.swift */,
+				9D7F1C6D1C3B798E00420D0A /* StaticData.swift */,
+				9D7F1C7A1C3B7A8E00420D0A /* UserDefaultKeys.swift */,
+				9DA85B511C36F72B0063762D /* SiteColors.swift */,
 				9DEF10C81C2A48A200A37A84 /* DataSource.swift */,
 				9DEF10CA1C2A4E8400A37A84 /* NameCodePair.swift */,
 			);
@@ -202,6 +234,8 @@
 			files = (
 				9DB8D1B21C1CA7C8000E750A /* p2s_action_bar_logo.png in Resources */,
 				9DB8D1A51C1C99AF000E750A /* LaunchScreen.storyboard in Resources */,
+				9D7F1C781C3B79BC00420D0A /* RegisterViewController.storyboard in Resources */,
+				9D7F1C751C3B79BC00420D0A /* Login3ViewController.storyboard in Resources */,
 				9DEB22C81C35902A00AE0257 /* SelectionsViewController.storyboard in Resources */,
 				9DB8D1A21C1C99AF000E750A /* Assets.xcassets in Resources */,
 				9DB8D1B31C1CA7C8000E750A /* p2s_login_page_logo.png in Resources */,
@@ -218,14 +252,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7F1C7B1C3B7A8E00420D0A /* UserDefaultKeys.swift in Sources */,
 				9DEF10C91C2A48A200A37A84 /* DataSource.swift in Sources */,
 				9DEB22BC1C358FB900AE0257 /* QueryAllDataFromServer.swift in Sources */,
 				9DEB22C61C35902A00AE0257 /* SelectionCell.swift in Sources */,
 				9DEF10CB1C2A4E8400A37A84 /* NameCodePair.swift in Sources */,
 				9DB8D19D1C1C99AF000E750A /* ViewController.swift in Sources */,
+				9D7F1C6E1C3B798E00420D0A /* StaticData.swift in Sources */,
+				9D7F1C791C3B79BC00420D0A /* RegisterViewController.swift in Sources */,
 				9DEB22C91C35902A00AE0257 /* SelectionsViewController.swift in Sources */,
 				9DEB22BB1C358FB900AE0257 /* ProgressWheel.swift in Sources */,
+				9DA85B521C36F72B0063762D /* SiteColors.swift in Sources */,
 				9DEB22C01C358FD700AE0257 /* JsonLinks.swift in Sources */,
+				9D7F1C771C3B79BC00420D0A /* RegisterSaveViewController.swift in Sources */,
+				9D7F1C761C3B79BC00420D0A /* Login3ViewController.swift in Sources */,
 				9DB8D19B1C1C99AF000E750A /* AppDelegate.swift in Sources */,
 				9DEB22BF1C358FD700AE0257 /* CommonDataObject.swift in Sources */,
 			);

@@ -76,11 +76,24 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="AEm-Nd-RxW"/>
+                                    <constraint firstAttribute="height" constant="50" id="phc-wm-Uq2"/>
+                                </constraints>
                                 <state key="normal" title="Test Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="201" width="150" height="50"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AEm-Nd-RxW"/>
+                                        <exclude reference="phc-wm-Uq2"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="AEm-Nd-RxW"/>
+                                        <include reference="phc-wm-Uq2"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <action selector="nextPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1B0-i1-DPB"/>
@@ -96,6 +109,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="jTE-jd-34E" secondAttribute="trailing" constant="-20" id="dtk-mc-QGj"/>
                             <constraint firstItem="sBp-CE-NSe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="hyo-OJ-aSq"/>
                             <constraint firstItem="jTE-jd-34E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="tDE-Av-otC"/>
+                            <constraint firstItem="1b3-Pd-Cdt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wir-gf-8Iz"/>
+                            <constraint firstItem="1b3-Pd-Cdt" firstAttribute="top" secondItem="sBp-CE-NSe" secondAttribute="bottom" constant="128" id="xXo-L9-F2b"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -110,6 +125,8 @@
                                 <exclude reference="OKo-qA-RAQ"/>
                                 <exclude reference="bz0-c1-dno"/>
                                 <exclude reference="hyo-OJ-aSq"/>
+                                <exclude reference="wir-gf-8Iz"/>
+                                <exclude reference="xXo-L9-F2b"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -125,6 +142,8 @@
                                 <include reference="OKo-qA-RAQ"/>
                                 <include reference="bz0-c1-dno"/>
                                 <include reference="hyo-OJ-aSq"/>
+                                <include reference="wir-gf-8Iz"/>
+                                <include reference="xXo-L9-F2b"/>
                             </mask>
                         </variation>
                     </view>

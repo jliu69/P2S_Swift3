@@ -10,6 +10,8 @@ import UIKit
 
 class NameCodePair: NSObject {
     
+    //-- for testing only
+    
     var name:String? = ""
     var code:String? = ""
 }

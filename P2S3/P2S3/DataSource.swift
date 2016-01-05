@@ -10,6 +10,8 @@ import UIKit
 
 class DataSource: NSObject {
     
+    //-- for testing only
+    
     func stateList() -> Array<AnyObject> {
         
         var dataList: Array<AnyObject> = []
