@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         
         self.showLogin()
         
-        self.testing()
+        //self.testing()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func settingsAction(sender: AnyObject) {
-        print("... this is to settings page")
+        self.showLogin()
     }
     
     //MARK: - show login

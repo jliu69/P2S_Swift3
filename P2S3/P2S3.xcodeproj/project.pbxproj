@@ -23,6 +23,8 @@
 		9DB8D1B11C1CA7C8000E750A /* p2s_action_bar_logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8D1AE1C1CA7C8000E750A /* p2s_action_bar_logo_small.png */; settings = {ASSET_TAGS = (); }; };
 		9DB8D1B21C1CA7C8000E750A /* p2s_action_bar_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8D1AF1C1CA7C8000E750A /* p2s_action_bar_logo.png */; settings = {ASSET_TAGS = (); }; };
 		9DB8D1B31C1CA7C8000E750A /* p2s_login_page_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8D1B01C1CA7C8000E750A /* p2s_login_page_logo.png */; settings = {ASSET_TAGS = (); }; };
+		9DC7C32A1C3CC7CF0041A7FF /* AlertsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7C3281C3CC7CF0041A7FF /* AlertsHelper.swift */; settings = {ASSET_TAGS = (); }; };
+		9DC7C32B1C3CC7CF0041A7FF /* EmailsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7C3291C3CC7CF0041A7FF /* EmailsHelper.swift */; settings = {ASSET_TAGS = (); }; };
 		9DEB22BB1C358FB900AE0257 /* ProgressWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB22B91C358FB900AE0257 /* ProgressWheel.swift */; settings = {ASSET_TAGS = (); }; };
 		9DEB22BC1C358FB900AE0257 /* QueryAllDataFromServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB22BA1C358FB900AE0257 /* QueryAllDataFromServer.swift */; settings = {ASSET_TAGS = (); }; };
 		9DEB22BF1C358FD700AE0257 /* CommonDataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEB22BD1C358FD700AE0257 /* CommonDataObject.swift */; settings = {ASSET_TAGS = (); }; };
@@ -54,6 +56,8 @@
 		9DB8D1AE1C1CA7C8000E750A /* p2s_action_bar_logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2s_action_bar_logo_small.png; sourceTree = "<group>"; };
 		9DB8D1AF1C1CA7C8000E750A /* p2s_action_bar_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2s_action_bar_logo.png; sourceTree = "<group>"; };
 		9DB8D1B01C1CA7C8000E750A /* p2s_login_page_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2s_login_page_logo.png; sourceTree = "<group>"; };
+		9DC7C3281C3CC7CF0041A7FF /* AlertsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertsHelper.swift; path = Helper/AlertsHelper.swift; sourceTree = "<group>"; };
+		9DC7C3291C3CC7CF0041A7FF /* EmailsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmailsHelper.swift; path = Helper/EmailsHelper.swift; sourceTree = "<group>"; };
 		9DEB22B91C358FB900AE0257 /* ProgressWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressWheel.swift; path = Models/ProgressWheel.swift; sourceTree = "<group>"; };
 		9DEB22BA1C358FB900AE0257 /* QueryAllDataFromServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueryAllDataFromServer.swift; path = Models/QueryAllDataFromServer.swift; sourceTree = "<group>"; };
 		9DEB22BD1C358FD700AE0257 /* CommonDataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonDataObject.swift; path = Data/CommonDataObject.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				9DEB22C11C35901200AE0257 /* Controllers */,
 				9D7F1C6F1C3B799F00420D0A /* Login_Register */,
 				9DEF10C71C2A488000A37A84 /* Data */,
+				9DC7C3271C3CC7A50041A7FF /* Helper */,
 				9DEB22B81C358F6100AE0257 /* Models */,
 				9DB8D1AD1C1CA7B5000E750A /* Images */,
 				9DB8D1A11C1C99AF000E750A /* Assets.xcassets */,
@@ -140,6 +145,15 @@
 				9DB8D1B01C1CA7C8000E750A /* p2s_login_page_logo.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		9DC7C3271C3CC7A50041A7FF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9DC7C3281C3CC7CF0041A7FF /* AlertsHelper.swift */,
+				9DC7C3291C3CC7CF0041A7FF /* EmailsHelper.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		9DEB22B81C358F6100AE0257 /* Models */ = {
@@ -252,12 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC7C32B1C3CC7CF0041A7FF /* EmailsHelper.swift in Sources */,
 				9D7F1C7B1C3B7A8E00420D0A /* UserDefaultKeys.swift in Sources */,
 				9DEF10C91C2A48A200A37A84 /* DataSource.swift in Sources */,
 				9DEB22BC1C358FB900AE0257 /* QueryAllDataFromServer.swift in Sources */,
 				9DEB22C61C35902A00AE0257 /* SelectionCell.swift in Sources */,
 				9DEF10CB1C2A4E8400A37A84 /* NameCodePair.swift in Sources */,
 				9DB8D19D1C1C99AF000E750A /* ViewController.swift in Sources */,
+				9DC7C32A1C3CC7CF0041A7FF /* AlertsHelper.swift in Sources */,
 				9D7F1C6E1C3B798E00420D0A /* StaticData.swift in Sources */,
 				9D7F1C791C3B79BC00420D0A /* RegisterViewController.swift in Sources */,
 				9DEB22C91C35902A00AE0257 /* SelectionsViewController.swift in Sources */,

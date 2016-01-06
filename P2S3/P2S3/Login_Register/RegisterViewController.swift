@@ -22,12 +22,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     let iPhone4Height: CGFloat = 480.0
     
     var isSmallScreen: Bool = false
-    var alreadyMoved: Bool = false
+    var originalYCenter:CGFloat = 0.0
     
     //MARK: - init
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.originalYCenter = self.view.frame.origin.y
         
         self.cancelButton.layer.cornerRadius = 5
         self.cancelButton.clipsToBounds = true
@@ -53,6 +55,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     //MARK: - IB actions
     
     @IBAction func cancelAction(sender: AnyObject) {
+        
+        self.moveDown()
         self.clearKeyboard()
         
         //-- close itself
@@ -60,6 +64,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func nextAction(sender: AnyObject) {
+        
+        self.moveDown()
         self.clearKeyboard()
         
         //-- to next page
@@ -81,22 +87,47 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         self.passwordAgainTextField.resignFirstResponder()
     }
     
-    //MARK: - notifications
-    
-    func keyboardWillShow(notifucation: NSNotification) {
+    func isAlreadyMoved() -> Bool {
         
-        if isSmallScreen {
-            self.view.frame.origin.y -= self.movingSpace
-            self.alreadyMoved = true
+        if self.view.frame.origin.y < self.originalYCenter {
+            return true
+        }
+        else {
+            return false
         }
     }
     
-    func keyboardWillHide(notification: NSNotification) {
+    func moveUp() {
         
-        if isSmallScreen && alreadyMoved {
-            self.view.frame.origin.y += self.movingSpace
-            self.alreadyMoved = false
+        if isSmallScreen {
+            
+            if self.isAlreadyMoved() {
+                return
+            }
+            self.view.frame.origin.y -= self.movingSpace
         }
+    }
+    
+    func moveDown() {
+        
+        if isSmallScreen {
+            
+            if !self.isAlreadyMoved() {
+                return
+            }
+            self.view.frame.origin.y += self.movingSpace
+        }
+        
+    }
+    
+    //MARK: - notifications
+    
+    func keyboardWillShow(notifucation: NSNotification) {
+        self.moveUp()
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        self.moveDown()
     }
     
 
